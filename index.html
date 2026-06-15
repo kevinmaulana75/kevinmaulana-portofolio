@@ -12,12 +12,19 @@
 
     <!-- Navigation Bar -->
     <nav id="navbar" class="fixed top-0 left-0 w-full z-[100] px-10 py-6 flex justify-between items-center transition-all duration-300">
-        <div class="text-2xl font-black tracking-tighter uppercase">KEVIN<span class="text-blue-500">.</span></div>
+        <div class="flex items-center gap-3 group cursor-pointer">
+            <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300 shadow-lg shadow-blue-500/20">
+                <!-- Logo from SVG file -->
+                <img src="logo/logo.svg" alt="Kevin's Logo" class="w-6 h-6">
+            </div>
+            <div class="text-2xl font-black tracking-tighter uppercase">KEVIN<span class="text-blue-500">.</span></div>
+        </div>
         
         <!-- Desktop Menu -->
         <ul class="hidden md:flex gap-10 text-xs font-bold tracking-[0.3em] uppercase text-white/90">
             <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
-            <li><a href="#details" class="hover:text-blue-400 transition">Details</a></li>
+            <li><a href="#work-experience" class="hover:text-blue-400 transition">Experience</a></li>
+            <li><a href="#apps" class="hover:text-blue-400 transition">Apps</a></li>
             <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
             <li><a href="#contact" class="hover:text-blue-400 transition border-b border-blue-500 pb-1">Contact</a></li>
         </ul>
@@ -33,7 +40,8 @@
     <!-- Mobile Menu Overlay -->
     <div id="mobile-menu" class="fixed inset-0 bg-[#003cc5]/95 backdrop-blur-2xl z-[90] flex flex-col items-center justify-center gap-12 text-3xl font-black tracking-tighter uppercase transform translate-x-full transition-transform">
         <a href="#about" class="mobile-link hover:text-blue-400 transition-all">About</a>
-        <a href="#details" class="mobile-link hover:text-blue-400 transition-all">Details</a>
+        <a href="#work-experience" class="mobile-link hover:text-blue-400 transition-all">Experience</a>
+        <a href="#apps" class="mobile-link hover:text-blue-400 transition-all">Apps</a>
         <a href="#projects" class="mobile-link hover:text-blue-400 transition-all">Projects</a>
         <a href="#contact" class="mobile-link text-blue-400 border-b-2 border-blue-400">Contact</a>
         
@@ -139,86 +147,135 @@
         </div>
     </section>
 
-    <!-- Consolidated Details Section (Based on Image 11.png) -->
-    <section id="details" class="min-h-screen flex items-center justify-center p-10 lg:p-24 relative overflow-hidden">
-        <div class="container mx-auto reveal z-10 grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24 items-start">
-            
-            <!-- Column 1: Education & Organization -->
-            <div class="space-y-20">
-                <div class="space-y-6">
-                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase">EDUCATION</h2>
-                    <div class="space-y-1">
-                        <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
-                        <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
-                        <p class="text-lg text-white/70 font-bold mt-2">91.00 / 100.00</p>
-                    </div>
-                </div>
-                
-                <div class="space-y-8">
-                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase leading-none">ORGANIZATION<br>EXPERIENCE</h2>
-                    <div class="space-y-8">
-                        <div class="space-y-2">
-                            <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
-                            <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
-                            <ul class="list-disc list-inside text-lg text-white/80">
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                        </div>
-                        <div class="space-y-2">
-                            <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
-                            <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
-                            <ul class="list-disc list-inside text-lg text-white/80">
-                                <li>Lorem ipsum dolor sit amet.</li>
-                                <li>Lorem ipsum dolor sit amet.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Work Experience Section (Based on Image 12.png) -->
+    <section id="work-experience" class="flex items-center justify-center py-12 md:py-16 px-10 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
+            WORK EXPERIENCE
+        </div>
 
-            <!-- Column 2: Work Experience & APP -->
-            <div class="space-y-20">
-                <div class="space-y-6">
-                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase leading-none">WORK<br>EXPERIENCE</h2>
+        <div class="container mx-auto reveal z-10 text-white">
+            <h2 class="text-7xl md:text-9xl font-black tracking-tighter uppercase mb-12 leading-none">
+                WORK EXPERIENCE
+            </h2>
+        <div class="space-y-4 mb-12">
+            <div class="flex flex-col md:flex-row justify-between items-baseline gap-2">
+                <h3 class="text-2xl md:text-4xl font-bold">Graphic Design and IT technicians - Intern</h3>
+                <span class="text-xl md:text-2xl font-medium opacity-60">July 2025 - Februari 2026</span>
+            </div>
+            <p class="text-xl md:text-3xl font-medium opacity-80">Fakultas Vokasi Universitas Brawijaya</p>
+        </div>
+            <ul class="list-disc list-inside text-lg md:text-2xl space-y-4 max-w-5xl">
+                <li>Designed and edited Instagram content for the faculty account — including posts for national holidays, faculty events, and campus activities — using Canva.</li>
+                <li>Edited promotional Reels for faculty events using CapCut.</li>
+                <li>Installed and configured a storage server for faculty IT infrastructure.</li>
+                <li>Performed LAN cable crimping and assisted in assembling PCs for the computer lab.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Organization & Education Section (Based on Image 13.png) -->
+    <section id="organization-edu" class="flex items-center justify-center py-12 md:py-16 px-10 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white uppercase">
+            DETAILS
+        </div>
+
+        <div class="container mx-auto reveal z-10 text-white">
+            <div class="space-y-12">
+                <!-- Organization Experience -->
+                <div class="space-y-12">
+                    <h2 class="text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none">
+                        ORGANIZATION EXPERIENCE
+                    </h2>
+                    <div class="space-y-12">
+                        <div class="space-y-4">
+                            <div class="flex flex-col md:flex-row justify-between items-baseline gap-2">
+                                <h3 class="text-2xl md:text-4xl font-bold">Staff of the Social Awareness and Concern Division</h3>
+                                <span class="text-xl md:text-2xl font-medium opacity-60">November 2023 - November 2024</span>
+                            </div>
+                            <p class="text-xl md:text-3xl font-medium opacity-80">Organisasi Siswa Intra Sekolah (OSIS)</p>
+                            <ul class="list-disc list-inside text-lg md:text-2xl space-y-3 opacity-90 mt-4">
+                                <li>Initiating counseling sessions among Student Council divisions to improve communication and teamwork.</li>
+                                <li>Organizing an end-of-semester community service activity to clean the school facilities.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex flex-col md:flex-row justify-between items-baseline gap-2">
+                                <h3 class="text-2xl md:text-4xl font-bold">Head of the Division of Physical Health, Nutrition, and Sports</h3>
+                                <span class="text-xl md:text-2xl font-medium opacity-60">December 2024 - December 2025</span>
+                            </div>
+                            <p class="text-xl md:text-3xl font-medium opacity-80">Organisasi Siswa Intra Sekolah (OSIS)</p>
+                            <ul class="list-disc list-inside text-lg md:text-2xl space-y-3 opacity-90 mt-4">
+                                <li>Served as Executive Chair of the Odd-Semester Class Meeting (December 2024) — coordinating the entire series of activities from planning through implementation.</li>
+                                <li>Initiated and actively participated in the Even-Semester Class Meeting (June 2025) as part of the core organizing committee.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="space-y-12 pt-10 border-t border-white/10">
+                    <h2 class="text-7xl md:text-9xl font-black tracking-tighter uppercase leading-none">
+                        EDUCATION
+                    </h2>
                     <div class="space-y-4">
-                        <div class="space-y-1">
-                            <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
-                            <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
+                        <div class="flex flex-col md:flex-row justify-between items-baseline gap-2">
+                            <h3 class="text-2xl md:text-4xl font-bold">SMK Negeri 5 Malang</h3>
+                            <span class="text-xl md:text-2xl font-medium opacity-60">July 2023 - May 2026</span>
                         </div>
-                        <ul class="list-disc list-inside text-lg text-white/80 space-y-1">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="space-y-8">
-                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase">APP</h2>
-                    <div class="grid grid-cols-3 gap-4 max-w-[280px]">
-                        <!-- App Icons with consistent hover effect -->
-                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-pink-400/40 to-blue-400/40 hover:from-pink-500 hover:to-blue-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
-                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-purple-400/40 to-pink-400/40 hover:from-purple-500 hover:to-pink-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
-                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-blue-400/40 to-purple-400/40 hover:from-blue-500 hover:to-purple-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
-                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-indigo-400/40 to-blue-400/40 hover:from-indigo-500 hover:to-blue-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
-                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-cyan-400/40 to-indigo-400/40 hover:from-cyan-500 hover:to-indigo-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
+                        <p class="text-xl md:text-3xl font-medium opacity-80">Pengembangan Perangkat Lunak dan Gim</p>
+                        <p class="text-5xl md:text-7xl font-black tracking-tighter mt-10">91.00 / 100.00</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Column 3: Skill -->
-            <div class="space-y-8">
-                <h2 class="text-4xl font-black tracking-tighter text-white uppercase">SKILL</h2>
-                <ul class="list-disc list-inside text-lg text-white/80 space-y-2">
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                </ul>
+    <!-- Apps Section (Based on Image 14.png) -->
+    <section id="apps" class="flex items-center justify-center py-12 md:py-16 px-10 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white uppercase">
+            TOOLS
+        </div>
+
+        <div class="container mx-auto reveal z-10 text-center">
+
+            <!-- App Icons -->
+            <div class="flex flex-wrap justify-center gap-6 md:gap-10 mb-20">
+                <!-- Canva -->
+                <div class="app-icon w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-cyan-400/20 to-purple-600/20 rounded-[2rem] border border-white/20 flex items-center justify-center p-6 shadow-lg backdrop-blur-md">
+                    <img src="logo/canva.svg" alt="Canva" class="w-full h-full object-contain">
+                </div>
+                <!-- CapCut -->
+                <div class="app-icon w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-gray-700/20 to-gray-900/40 rounded-[2rem] border border-white/20 flex items-center justify-center p-6 shadow-lg backdrop-blur-md">
+                    <img src="logo/capcut.svg" alt="CapCut" class="w-full h-full object-contain">
+                </div>
+                <!-- Figma -->
+                <div class="app-icon w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-purple-400/20 to-pink-600/20 rounded-[2rem] border border-white/20 flex items-center justify-center p-6 shadow-lg backdrop-blur-md">
+                    <img src="logo/figma.svg" alt="Figma" class="w-full h-full object-contain">
+                </div>
+                <!-- Visual Studio Code -->
+                <div class="app-icon w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-[2rem] border border-white/20 flex items-center justify-center p-6 shadow-lg backdrop-blur-md">
+                    <img src="logo/vscode.svg" alt="VS Code" class="w-full h-full object-contain">
+                </div>
+                <!-- GitHub -->
+                <div class="app-icon w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-gray-400/20 to-black/40 rounded-[2rem] border border-white/20 flex items-center justify-center p-6 shadow-lg backdrop-blur-md">
+                    <img src="logo/github_dark.svg" alt="GitHub" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+            <!-- Description Text Rows -->
+            <div class="space-y-8 max-w-6xl mx-auto px-4">
+                <div class="flex flex-wrap justify-center gap-x-12 gap-y-4">
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">Social Media Content Design</p>
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">Graphic Design</p>
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">Video Editing</p>
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">Web Development</p>
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">UI/UX Design</p>
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">Team Collaboration</p>
+                    <p class="text-sm md:text-lg font-medium opacity-80 uppercase tracking-widest">Creative Problem Solving</p>
+                </div>
             </div>
         </div>
     </section>
