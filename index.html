@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kevin</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-white">
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full z-[100] px-10 py-6 flex justify-between items-center transition-all duration-300">
+        <div class="text-2xl font-black tracking-tighter uppercase">KEVIN<span class="text-blue-500">.</span></div>
+        
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex gap-10 text-xs font-bold tracking-[0.3em] uppercase text-white/90">
+            <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+            <li><a href="#details" class="hover:text-blue-400 transition">Details</a></li>
+            <li><a href="#projects" class="hover:text-blue-400 transition">Projects</a></li>
+            <li><a href="#contact" class="hover:text-blue-400 transition border-b border-blue-500 pb-1">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Toggle Button -->
+        <button id="menu-btn" class="md:hidden flex flex-col justify-center items-end gap-1.5 z-[110] focus:outline-none group">
+            <span class="w-8 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+            <span class="w-6 h-0.5 bg-white transition-all duration-300 rounded-full group-hover:w-8"></span>
+            <span class="w-8 h-0.5 bg-white transition-all duration-300 rounded-full"></span>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#003cc5]/95 backdrop-blur-2xl z-[90] flex flex-col items-center justify-center gap-12 text-3xl font-black tracking-tighter uppercase transform translate-x-full transition-transform">
+        <a href="#about" class="mobile-link hover:text-blue-400 transition-all">About</a>
+        <a href="#details" class="mobile-link hover:text-blue-400 transition-all">Details</a>
+        <a href="#projects" class="mobile-link hover:text-blue-400 transition-all">Projects</a>
+        <a href="#contact" class="mobile-link text-blue-400 border-b-2 border-blue-400">Contact</a>
+        
+        <div class="absolute bottom-10 opacity-30 text-xs tracking-[0.5em] font-bold">
+            KEVIN PORTFOLIO 2024
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center p-10">
+        <main class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        
+        <!-- Text Section -->
+        <div class="flex flex-col z-10 select-none">
+            <h1 class="text-huge font-black animate-text delay-1">
+                PORTO
+            </h1>
+            <h1 class="text-huge font-black animate-text delay-2">
+                FOLIO
+            </h1>
+        </div>
+
+        <!-- Image Section (Blob) -->
+        <div class="relative animate-image">
+            <div class="blob w-64 h-64 md:w-[500px] md:h-[500px] overflow-hidden border-4 border-blue-400/20">
+                <img 
+                    src="design/1.png" 
+                    alt="Kevin" 
+                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                >
+            </div>
+            <!-- Decorative Ring -->
+            <div class="absolute -inset-4 border border-white/10 rounded-full animate-pulse"></div>
+        </div>
+
+        </main>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="min-h-screen flex items-center justify-center p-10 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
+            ABOUT
+        </div>
+
+        <div class="container mx-auto reveal z-10">
+            <div class="flex flex-col md:flex-row gap-12 lg:gap-16 items-center justify-center">
+                
+                <!-- Image Side -->
+                <div class="w-full md:w-[400px] relative group">
+                    <div class="aspect-[3/4] w-full bg-blue-600 rounded-[4rem] overflow-hidden shadow-2xl border-2 border-white/20">
+                        <img 
+                            src="design/2.png" 
+                            alt="About Kevin" 
+                            class="w-full h-full object-cover transition-all duration-700"
+                        >
+                    </div>
+                    <!-- Decorative Element -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-blue-400 rounded-2xl -z-10 animate-pulse hidden md:block"></div>
+                </div>
+                
+                <!-- Content Side -->
+                <div class="flex-1 max-w-2xl glass-card floating p-10 md:p-14 text-center">
+                    <div class="space-y-10">
+                        <p class="text-lg md:text-xl text-white leading-relaxed font-medium">
+                            Halo! Saya Kevin, seorang pengembang perangkat lunak yang memiliki gairah tinggi dalam membangun produk digital yang estetik dan fungsional. Saya fokus pada detail dan selalu berusaha memberikan pengalaman pengguna yang terbaik melalui kode yang bersih dan desain yang modern.
+                        </p>
+
+                        <!-- Contact Section -->
+                        <div class="pt-6 border-t border-white/10">
+                            <h3 class="text-3xl font-black tracking-widest mb-10 uppercase">Contact</h3>
+                            
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 justify-items-center">
+                                <!-- Phone -->
+                                <a href="tel:+62123456789" class="group flex flex-col items-center gap-2">
+                                    <div class="p-4 rounded-2xl bg-white/5 group-hover:bg-blue-500 transition-all duration-500 group-hover:-translate-y-2 shadow-lg">
+                                        <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M6.62 10.79a15.15 15.15 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.72 11.72 0 003.7.59 1 1 0 011 1V20a1 1 0 01-1 1A16 16 0 013 5a1 1 0 011-1h3.41a1 1 0 011 1 11.72 11.72 0 00.59 3.7 1 1 0 01-.27 1.11l-2.11 2.09z"/></svg>
+                                    </div>
+                                </a>
+                                <!-- LinkedIn -->
+                                <a href="https://linkedin.com/in/kevin" target="_blank" class="group flex flex-col items-center gap-2">
+                                    <div class="p-4 rounded-2xl bg-white/5 group-hover:bg-blue-500 transition-all duration-500 group-hover:-translate-y-2 shadow-lg">
+                                        <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                    </div>
+                                </a>
+                                <!-- Email -->
+                                <a href="mailto:kevin@example.com" class="group flex flex-col items-center gap-2">
+                                    <div class="p-4 rounded-2xl bg-white/5 group-hover:bg-blue-500 transition-all duration-500 group-hover:-translate-y-2 shadow-lg">
+                                        <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                                    </div>
+                                </a>
+                                <!-- Instagram -->
+                                <a href="https://instagram.com/kevin" target="_blank" class="group flex flex-col items-center gap-2">
+                                    <div class="p-4 rounded-2xl bg-white/5 group-hover:bg-blue-500 transition-all duration-500 group-hover:-translate-y-2 shadow-lg">
+                                        <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consolidated Details Section (Based on Image 11.png) -->
+    <section id="details" class="min-h-screen flex items-center justify-center p-10 lg:p-24 relative overflow-hidden">
+        <div class="container mx-auto reveal z-10 grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-24 items-start">
+            
+            <!-- Column 1: Education & Organization -->
+            <div class="space-y-20">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase">EDUCATION</h2>
+                    <div class="space-y-1">
+                        <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
+                        <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
+                        <p class="text-lg text-white/70 font-bold mt-2">91.00 / 100.00</p>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase leading-none">ORGANIZATION<br>EXPERIENCE</h2>
+                    <div class="space-y-8">
+                        <div class="space-y-2">
+                            <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
+                            <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
+                            <ul class="list-disc list-inside text-lg text-white/80">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                        <div class="space-y-2">
+                            <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
+                            <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
+                            <ul class="list-disc list-inside text-lg text-white/80">
+                                <li>Lorem ipsum dolor sit amet.</li>
+                                <li>Lorem ipsum dolor sit amet.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: Work Experience & APP -->
+            <div class="space-y-20">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase leading-none">WORK<br>EXPERIENCE</h2>
+                    <div class="space-y-4">
+                        <div class="space-y-1">
+                            <p class="text-xl font-bold text-white">Lorem ipsum dolor sit amet.</p>
+                            <p class="text-lg text-white/90 font-medium">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <ul class="list-disc list-inside text-lg text-white/80 space-y-1">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <h2 class="text-4xl font-black tracking-tighter text-white uppercase">APP</h2>
+                    <div class="grid grid-cols-3 gap-4 max-w-[280px]">
+                        <!-- App Icons with consistent hover effect -->
+                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-pink-400/40 to-blue-400/40 hover:from-pink-500 hover:to-blue-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
+                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-purple-400/40 to-pink-400/40 hover:from-purple-500 hover:to-pink-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
+                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-blue-400/40 to-purple-400/40 hover:from-blue-500 hover:to-purple-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
+                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-indigo-400/40 to-blue-400/40 hover:from-indigo-500 hover:to-blue-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
+                        <div class="app-icon w-20 h-20 bg-gradient-to-br from-cyan-400/40 to-indigo-400/40 hover:from-cyan-500 hover:to-indigo-500 backdrop-blur-xl rounded-3xl border border-white/20 hover:border-white/60 flex items-center justify-center text-[6px] font-bold text-white/30 hover:text-white uppercase italic shadow-lg">Canva</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 3: Skill -->
+            <div class="space-y-8">
+                <h2 class="text-4xl font-black tracking-tighter text-white uppercase">SKILL</h2>
+                <ul class="list-disc list-inside text-lg text-white/80 space-y-2">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Showcase Section (Based on Image 6.png) -->
+    <section id="work" class="min-h-screen flex items-center justify-center p-6 lg:p-24 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
+            WORK
+        </div>
+
+        <div class="container mx-auto reveal z-10">
+            <div class="glass-card overflow-hidden p-2 md:p-4 relative">
+                <!-- Image Grid Tiling -->
+                <div class="grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-4">
+                    <!-- Generate 15 Tiles to fill the view like in 6.png -->
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105 md:block hidden">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105">
+                    <img src="design/1.png" alt="Work" class="w-full aspect-square object-cover rounded-xl md:rounded-[2rem] grayscale hover:grayscale-0 transition-all duration-500 hover:scale-105 md:block hidden">
+                </div>
+
+                <!-- Glassmorphism Text Overlay -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+                    <div class="px-8 py-4 md:px-12 md:py-6 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.3)] transform scale-90 md:scale-100">
+                        <h3 class="text-3xl md:text-5xl font-black tracking-tighter text-white uppercase italic text-center leading-none">
+                            FEATURED PROJECTS
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reels Showcase Section (Inspired by Image 6.png with 9:16 Aspect) -->
+    <section id="reels" class="min-h-screen flex items-center justify-center p-6 lg:p-24 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
+            REELS
+        </div>
+
+        <div class="container mx-auto reveal z-10">
+            <div class="glass-card overflow-hidden p-4 md:p-8 relative">
+                <!-- Video Grid Tiling (9:16 Aspect Ratio) -->
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+                    <!-- Tile 1 -->
+                    <div class="aspect-[9/16] bg-blue-900/20 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative group cursor-pointer shadow-xl">
+                        <img src="design/1.png" alt="Reels Edit" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center border border-white/30 group-hover:scale-125 group-hover:bg-blue-500 transition-all duration-500">
+                                <svg class="w-6 h-6 text-white ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate tiles for the "Wallpaper" effect -->
+                    <div class="aspect-[9/16] bg-blue-900/20 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative group cursor-pointer shadow-xl hidden md:block">
+                        <img src="design/2.png" alt="Reels Edit" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    </div>
+                    <div class="aspect-[9/16] bg-blue-900/20 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative group cursor-pointer shadow-xl">
+                        <img src="design/1.png" alt="Reels Edit" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    </div>
+                    <div class="aspect-[9/16] bg-blue-900/20 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative group cursor-pointer shadow-xl">
+                        <img src="design/2.png" alt="Reels Edit" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    </div>
+                    <div class="aspect-[9/16] bg-blue-900/20 rounded-[1.5rem] md:rounded-[2.5rem] overflow-hidden relative group cursor-pointer shadow-xl hidden lg:block">
+                        <img src="design/1.png" alt="Reels Edit" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700">
+                    </div>
+                </div>
+
+                <!-- Glassmorphism Text Overlay -->
+                <div class="absolute inset-0 flex items-center justify-center pointer-events-none z-20">
+                    <div class="px-8 py-4 md:px-12 md:py-6 bg-white/10 backdrop-blur-2xl border border-white/20 rounded-[2rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform scale-90 md:scale-100">
+                        <h3 class="text-3xl md:text-5xl font-black tracking-tighter text-white uppercase italic text-center leading-none">
+                            VIDEO EDITS
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Projects Section -->
+    <section id="projects" class="min-h-screen flex items-center justify-center p-6 lg:p-24 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
+            PROJECTS
+        </div>
+
+        <div class="container mx-auto reveal z-10 space-y-16">
+            <h2 class="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase text-center md:text-left leading-none">
+                PERSONAL<br><span class="text-blue-500">PROJECTS.</span>
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <div class="glass-card p-6 group cursor-pointer hover:border-blue-400/50 transition-all duration-500">
+                    <div class="rounded-[3rem] overflow-hidden aspect-video bg-blue-900/50">
+                        <img src="design/project1.png" alt="Website 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold uppercase tracking-tight">E-Commerce Platform</h3>
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card p-6 group cursor-pointer hover:border-blue-400/50 transition-all duration-500">
+                    <div class="rounded-[3rem] overflow-hidden aspect-video bg-blue-900/50">
+                        <img src="design/project2.png" alt="Website 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold uppercase tracking-tight">SaaS Dashboard UI</h3>
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card p-6 group cursor-pointer hover:border-blue-400/50 transition-all duration-500">
+                    <div class="rounded-[3rem] overflow-hidden aspect-video bg-blue-900/50">
+                        <img src="design/project3.png" alt="Website 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold uppercase tracking-tight">Creative Agency Site</h3>
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="glass-card p-6 group cursor-pointer hover:border-blue-400/50 transition-all duration-500">
+                    <div class="rounded-[3rem] overflow-hidden aspect-video bg-blue-900/50">
+                        <img src="design/project4.png" alt="Website 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <div class="p-6 md:p-8 flex justify-between items-center">
+                        <h3 class="text-2xl font-bold uppercase tracking-tight">Portfolio v1.0</h3>
+                        <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center group-hover:bg-blue-600 transition-colors">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer Section -->
+    <footer id="contact" class="min-h-screen flex items-center justify-center p-6 lg:p-24 relative overflow-hidden">
+        <!-- Background Large Text -->
+        <div class="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
+            CONTACT
+        </div>
+
+        <div class="container mx-auto reveal z-10">
+            <div class="max-w-4xl mx-auto glass-card p-10 md:p-16 space-y-12 shadow-2xl">
+                <div class="text-center space-y-4">
+                    <h2 class="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none">
+                        LET'S WORK <br> <span class="text-blue-400">TOGETHER.</span>
+                    </h2>
+                    <p class="text-xl text-blue-100/60 font-medium italic">Punya ide proyek? Mari kita wujudkan bersama.</p>
+                </div>
+
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="space-y-3 text-left">
+                        <label class="text-xs uppercase tracking-[0.3em] font-black text-blue-300 ml-2">Nama Lengkap</label>
+                        <input type="text" placeholder="Kevin Sanjaya" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all placeholder:text-white/20">
+                    </div>
+                    <div class="space-y-3 text-left">
+                        <label class="text-xs uppercase tracking-[0.3em] font-black text-blue-300 ml-2">Alamat Email</label>
+                        <input type="email" placeholder="kevin@example.com" class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all placeholder:text-white/20">
+                    </div>
+                    <div class="space-y-3 text-left md:col-span-2">
+                        <label class="text-xs uppercase tracking-[0.3em] font-black text-blue-300 ml-2">Pesan Anda</label>
+                        <textarea rows="4" placeholder="Halo Kevin, saya tertarik untuk..." class="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-400 focus:bg-white/10 transition-all placeholder:text-white/20 resize-none"></textarea>
+                    </div>
+                    <div class="md:col-span-2 flex justify-center pt-6">
+                        <button type="submit" class="group relative px-12 py-5 bg-white text-blue-700 font-black rounded-2xl hover:bg-blue-400 hover:text-white transition-all duration-300 shadow-xl tracking-widest text-sm overflow-hidden">
+                            <span class="relative z-10">KIRIM PESAN</span>
+                            <div class="absolute inset-0 h-full w-0 bg-blue-600 transition-all duration-300 group-hover:w-full -z-0"></div>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Final Copyright -->
+                <div class="pt-12 border-t border-white/10 text-center flex flex-col md:flex-row justify-between items-center gap-4">
+                    <p class="text-[10px] text-white/40 font-bold uppercase tracking-[0.4em]">© 2024 Portofolio Kevin — All Rights Reserved</p>
+                    <p class="text-[10px] text-white/40 font-bold uppercase tracking-[0.4em]">Built with Tailwind & Love</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Navigasi Minimalis (Opsional) -->
+    <div class="absolute bottom-10 left-10 text-sm tracking-widest opacity-50 hover:opacity-100 transition-opacity">
+        SCROLL UNTUK EKSPLORASI
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
