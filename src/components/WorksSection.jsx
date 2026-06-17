@@ -49,7 +49,7 @@ export default function WorksSection() {
         </h2>
         <div className="flex flex-col lg:flex-row gap-8 items-center justify-start w-full">
           {/* Box 1: Featured Projects (4x4 Grid) */}
-          <div className="glass-card overflow-hidden p-2 md:p-4 relative lg:w-[65%] w-full rounded-[2.5rem] md:rounded-[4rem]">
+          <div className="glass-card overflow-hidden p-2 md:p-4 relative lg:w-[65%] w-full rounded-2xl md:rounded-[2.5rem]">
             <div className="grid grid-cols-4 gap-2 md:gap-4">
               {feedImageList.map((src, i) => (
                 <img
@@ -63,7 +63,7 @@ export default function WorksSection() {
           </div>
 
           {/* Box 2: Story Designs (2x Grid) */}
-          <div className="glass-card overflow-hidden p-2 md:p-4 relative lg:w-[35%] w-full shrink-0 rounded-[2.5rem] md:rounded-[4rem]">
+          <div className="glass-card overflow-hidden p-2 md:p-4 relative lg:w-[35%] w-full shrink-0 rounded-2xl md:rounded-[3rem]">
             <div className="grid grid-cols-2 gap-2 md:gap-4">
               {storyImages.map((src, i) => (
                 <img

@@ -35,10 +35,9 @@ export default function ProjectsSection() {
       </div>
 
       <ScrollReveal className="container mx-auto z-10 space-y-16">
-        <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-white uppercase text-center md:text-left leading-none">
-          PERSONAL
+        <h2 className="text-7xl md:text-9xl font-black tracking-tighter text-white uppercase text-center md:text-left leading-none">
+          PROJECT
           <br />
-          <span className="text-blue-500">PROJECTS.</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
