@@ -56,6 +56,7 @@ export default function ReelsSection() {
                   muted
                   loop
                   playsInline
+                  preload="metadata"
                 >
                   <source src={src} type="video/mp4" />
                 </video>

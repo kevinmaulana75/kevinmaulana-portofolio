@@ -5,21 +5,25 @@ const projects = [
     title: "Akademik Mobile App",
     image: "/images/project/project1.png",
     alt: "Website 1",
+    link: "https://github.com/kevinmaulana75",
   },
   {
     title: "PRADIPTA Event Ticketing System",
     image: "/images/project/project2.png",
     alt: "Website 2",
+    link: "https://github.com/kevinmaulana75/tiket-pradipta.git",
   },
   {
     title: "Bookavy Library Management Sys",
     image: "/images/project/project3.png",
     alt: "Website 3",
+    link: "https://github.com/kevinmaulana75",
   },
   {
     title: "Portfolio 2.0",
     image: "/images/project/project4.png",
     alt: "Website 4",
+    link: "https://github.com/kevinmaulana75/kevinmaulana-portofolio.git",
   },
 ];
 
@@ -42,14 +46,19 @@ export default function ProjectsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project, i) => (
-            <div
+            <a
               key={i}
-              className="glass-card p-6 group cursor-pointer hover:border-blue-400/50 transition-all duration-500"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glass-card p-6 group cursor-pointer hover:border-blue-400/50 transition-all duration-500 block text-white hover:text-white no-underline"
             >
               <div className="rounded-[3rem] overflow-hidden aspect-video bg-blue-900/50">
                 <img
                   src={project.image}
                   alt={project.alt}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -73,7 +82,7 @@ export default function ProjectsSection() {
                   </svg>
                 </div>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </ScrollReveal>

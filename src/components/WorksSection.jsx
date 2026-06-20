@@ -1,12 +1,5 @@
 import ScrollReveal from "./ScrollReveal";
 
-const feedImages = Array.from({ length: 15 }, (_, i) => {
-  const num = i + 1;
-  // skip feed12 and feed16 (feed16.png exists but was originally shown, feed12 was skipped in original)
-  const actualNum = num >= 12 ? num + 1 : num;
-  return `/images/feed/feed${actualNum > 15 ? num : actualNum <= 11 ? num : actualNum}.png`;
-});
-
 // Use exact filenames from original HTML
 const feedImageList = [
   "/images/feed/feed1.png",
@@ -56,6 +49,8 @@ export default function WorksSection() {
                   key={i}
                   src={src}
                   alt="Featured Feed Design"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full aspect-[4/5] object-cover rounded-2xl md:rounded-[2.5rem] transition-all duration-500 hover:scale-105"
                 />
               ))}
@@ -70,6 +65,8 @@ export default function WorksSection() {
                   key={i}
                   src={src}
                   alt="Story Graphic Design"
+                  loading="lazy"
+                  decoding="async"
                   className="w-full aspect-[9/16] object-cover rounded-2xl md:rounded-[3rem] transition-all duration-500 hover:scale-105"
                 />
               ))}

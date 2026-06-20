@@ -11,6 +11,7 @@ export default function ScrollReveal({ children, className = "" }) {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("active");
+            observer.unobserve(entry.target);
           }
         });
       },

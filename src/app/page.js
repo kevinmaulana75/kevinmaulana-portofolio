@@ -7,6 +7,7 @@ import WorksSection from "@/components/WorksSection";
 import ReelsSection from "@/components/ReelsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <ReelsSection />
       <ProjectsSection />
       <Footer />
+      <BackToTop />
     </>
   );
 }
