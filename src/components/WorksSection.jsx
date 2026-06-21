@@ -35,7 +35,7 @@ export default function WorksSection() {
     >
       {/* Background Large Text */}
       <div className="absolute inset-0 flex items-center justify-center opacity-[0.06] select-none bg-text font-black italic text-white">
-        WORK
+        WORKS
       </div>
 
       <ScrollReveal className="container mx-auto z-10">
