@@ -13,9 +13,11 @@ const feedImageList = [
   "/images/feed/feed9.png",
   "/images/feed/feed10.png",
   "/images/feed/feed11.png",
+  "/images/feed/feed12.png",
   "/images/feed/feed13.png",
   "/images/feed/feed14.png",
   "/images/feed/feed15.png",
+  "/images/feed/feed16.png",
 ];
 
 const storyImages = [

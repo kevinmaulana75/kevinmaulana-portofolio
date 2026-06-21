@@ -5,7 +5,7 @@ const projects = [
     title: "Akademik Mobile App",
     image: "/images/project/project1.png",
     alt: "Website 1",
-    link: "https://github.com/kevinmaulana75",
+    link: "https://github.com/kevinmaulana75/akademik-mobile-app.git",
   },
   {
     title: "PRADIPTA Event Ticketing System",
@@ -17,7 +17,7 @@ const projects = [
     title: "Bookavy Library Management System",
     image: "/images/project/project3.png",
     alt: "Website 3",
-    link: "https://github.com/kevinmaulana75",
+    link: "https://github.com/kevinmaulana75/ukk-php-native-perpustakaan.git",
   },
   {
     title: "Portfolio 2.0",
