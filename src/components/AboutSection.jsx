@@ -31,6 +31,9 @@ export default function AboutSection() {
           {/* Content Side */}
           <div className="flex-1 max-w-2xl glass-card floating p-10 md:p-14 text-center shadow-2xl shadow-blue-500/20">
             <div className="space-y-10">
+              <h2 className="text-3xl md:text-4xl font-black tracking-tighter uppercase text-white leading-none">
+                Hi, I&apos;m <span className="text-blue-400">Kevin</span>
+              </h2>
               <p className="text-lg md:text-xl text-white/80 leading-relaxed font-light">
                 Creative techie blending design &amp; tech — UI/UX, web
                 development, visual content, and IT infrastructure. Driven by

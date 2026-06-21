@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 export default function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center p-10">

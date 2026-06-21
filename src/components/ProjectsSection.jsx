@@ -14,7 +14,7 @@ const projects = [
     link: "https://github.com/kevinmaulana75/tiket-pradipta.git",
   },
   {
-    title: "Bookavy Library Management Sys",
+    title: "Bookavy Library Management System",
     image: "/images/project/project3.png",
     alt: "Website 3",
     link: "https://github.com/kevinmaulana75",
